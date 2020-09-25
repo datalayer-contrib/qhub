@@ -45,14 +45,6 @@ variable is due to limitations in Terraform. `AWS_ACCESS_KEY_ID` is
 the same as your `SPACES_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` is
 the same as your `SPACES_SECRET_ACCESS_KEY`.
 
-Since the DigitalOcean [container
-registry](https://www.digitalocean.com/products/container-registry/)
-is not general availability yet and the Terraform [PR for support is
-not merged](https://github.com/terraform-providers/terraform-provider-digitalocean/pull/383) we require an external container registry. The simplest one to choose is Docker hub. Thus for DigitalOcean we also require Docker Hub access tokens ([tutorial](https://docs.docker.com/docker-hub/access-tokens/)).
-
- - `DOCKER_USERNAME`
- - `DOCKER_PASSWORD`
-
 {% elif cookiecutter.provider == 'gcp' %}
 
 Google Cloud deployment requires the project id and service account
